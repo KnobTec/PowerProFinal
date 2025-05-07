@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgba(253, 253, 253, 1);
+    font-family: 'Montserrat';
+}
+header {
+    align-items: center;
+}
+.logo-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    margin-left: 80%;
+}
+.logo-header img{
+    height: 55px;
+    width: 100%;
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 3%;
+}
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.nav-item {
+    margin: 0 20px;
+}
+.nav-link {
+    color: #09142D;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+.dropbtn {
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    background-color: #FDFDFD;
+    border-radius: 5px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FDFDFD;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    color: #09142D;
+    border-radius: 5px;
+}
+.dropdown-content a {
+    color: #09142D;
+    font-weight: 500;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.show {
+    display: block;
+}
+.mobile-menu-icon {
+    display: none;
+}
+.mobile-menu {
+    display: none;
+}
+body{
+    background-color: #FDFDFD;
+}
+.checkout-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.product-details {
+    display: flex;
+    margin-bottom: 20px;
+}
+.product-details img {
+    max-width: 200px;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+.info {
+    flex: 1;
+    margin-left: 3%;
+}
+.titulo-product{
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+.desc-product{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    margin-top: 2%;
+}
+.cor-product,
+.preco-product{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    margin-top: 3%;
+}
+.preco-product span{
+    font-weight: 600;
+}
+.title-pagament{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.payment-options {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+.checkout-button {
+    color: #FDFDFD;
+    background: #175274;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px;
+    width: 50%;
+    border: none;
+    border-radius: 4px;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.checkout-button img{
+    height: 20px;
+}
+.checkout-button:hover {
+    background: #10374e;
+    transition: all 0.3s ease-out;  
+}
+
+
+/*PIX SECTION*/
+
+.payment-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+.title-pix,
+.title-credito,
+.title-debito{
+    font-family: 'Space Grotesk';
+    font-weight: 600;
+}
+.desc-pix-1,
+.p-ou,
+.chave-pix,
+.valor-1{
+    font-family: 'Space Grotesk';
+    font-weight: 400;
+    margin-top: 3%;
+}
+.valor-1 span{
+    font-family: 'Space Grotesk';
+    font-weight: 600;
+}
+.payment-container img{
+    margin-top: 3%;
+}
+.pix-key {
+    font-family: 'Space Grotesk';
+    font-weight: 600;
+}
+/*PIX SECTION*/
+
+
+
+/*BOLETO SECTION*/
+.generate-boleto-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5%;
+}
+.generate-boleto-button:hover {
+    background-color: #0056b3;
+}
+/*BOLETO SECTION*/
