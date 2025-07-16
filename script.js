@@ -111,3 +111,46 @@ document.addEventListener('DOMContentLoaded', function () {
     msgCookies.classList.add('mostrar');
   }
 });
+
+
+function gerarCampos() {
+      const input = document.getElementById("input").value;
+      const output = document.getElementById("output");
+      output.innerHTML = ""; // limpa
+
+      const linhas = input.split("\n");
+
+      linhas.forEach((linha, index) => {
+        const match = linha.match(/(.+?)\s+([&_#\/]+)/);
+
+        if (match) {
+          const label = match[1].trim();
+          const pattern = match[2];
+
+          const field = document.createElement("div");
+          field.className = "field";
+
+          const labelElem = document.createElement("label");
+          labelElem.textContent = label;
+
+          const inputElem = document.createElement("input");
+
+          // Determina o tipo com base no pattern
+          if (pattern.includes("##/##/####")) {
+            inputElem.type = "date";
+          } else if (pattern.includes("_")) {
+            inputElem.type = "number";
+            inputElem.maxLength = pattern.length;
+          } else if (pattern.includes("&")) {
+            inputElem.type = "text";
+            inputElem.maxLength = pattern.length;
+          } else {
+            inputElem.type = "text"; // fallback
+          }
+
+          field.appendChild(labelElem);
+          field.appendChild(inputElem);
+          output.appendChild(field);
+        }
+      });
+    }
