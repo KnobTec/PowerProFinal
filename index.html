@@ -26,15 +26,6 @@
                     <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
                 </ul>
             </div>
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="css/imagens/icons/menu-abertoPreto.png" alt=""></button>
-            </div>
-        </nav>
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"><a href="#powerpro" class="nav-link">FAQ</a></li>
-            </ul>    
-        </div>
     </header>
     <main>
         <section id="home">
@@ -58,6 +49,27 @@
                 <h1>Para quem o<br>PowerPro é indicado?</h1>
                 <p class="desc-indicado">O PowerPro é a escolha ideal para uma ampla gama de usuários, desde iniciantes até equipes corporativas. Se você busca simplicidade na criação de aplicativos poderosos sem a necessidade de codificação extensiva, o PowerPro é perfeito para você. Empresários, desenvolvedores iniciantes e profissionais experientes encontrarão no PowerPro a ferramenta versátil e intuitiva que impulsionará seus projetos para o próximo nível. Descubra como o PowerPro pode atender às suas necessidades, proporcionando uma experiência de desenvolvimento eficiente e sem complicações.</p>
             </div>
+        </section>
+        <section id="criandoP">
+            <h1 class="criandoTitle">Crie uma tela no estilo PowerPro</h1>
+            <p class="criandoSubP">
+                Com o PowerPro, você cria sistemas digitando comandos simples e intuitivos. Olha só:
+                <BR><BR>
+                <strong>• Use & para campos de texto</strong>
+                <br>
+                <strong>• Use _ para campos numéricos</strong>
+                <br>
+                <strong>• Use # para campos de data</strong>
+                <br><br>
+                A quantidade de símbolos define o tamanho do campo. Por exemplo, &&&&&& cria um campo de texto com 6 caracteres. Simples assim.
+            </p>
+            <p class="criandoParagrafo">Digite abaixo os campos no estilo PowerPro e veja a mágica:</p>
+
+            <textarea id="input" class="criandoArea" placeholder="Ex:&#10;Nome &&&&&&&&&&&#10;Data de Nasc. ##/##/####&#10;Celular ___________"></textarea>
+            <button onclick="gerarCampos()">Gerar Campos</button>
+
+            <div id="output" class="criandoResult"></div>
+
         </section>
         <section id="preco">
             <div class="textos-preco">
@@ -140,6 +152,13 @@
                 </div>
             </div>
         </section>
+
+
+        
+
+
+
+
         <section id="faq">
             <div class="titulo-faq">
                 <h1>Perguntas frequentes</h1>
